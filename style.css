@@ -1,0 +1,49 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px silver;
+  animation: animation 5s;
+  position: relative;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animation {
+  0% {
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 200px;
+    background-color: black;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: 400px;
+    background-color: lime;
+  }
+  75% {
+    width: 150px;
+    height: 150px;
+    top: 400px;
+    left: 600px;
+    background-color: deeppink;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: 800px;
+    background-color: aqua;
+  }
+}
